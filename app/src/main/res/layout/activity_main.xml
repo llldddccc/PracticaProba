@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="sendMessage">
+
+    <LinearLayout
+        android:id="@+id/signup_panell"
+        android:layout_width="347dp"
+        android:layout_height="384dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/signup_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/signup_cognoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cognoms:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/signup_contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="contrasenya"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/signup_correu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="correu electronic:"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signup_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefon:"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/signup_dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DNI:"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="Registrar-se" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
